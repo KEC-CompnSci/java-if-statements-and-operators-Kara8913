@@ -9,8 +9,9 @@ public class Assignment {
      * - Large popcorn costs $7.25 (1 popcorn to share)
      */
     public static double calculateMovieNight() {
-        // TODO: Implement this metho
-        return 0.0;
+        // TODO: Implement this method
+        double cost = 12.5*2 + 8*3 + 7.25;
+        return cost;
     }
 
     /**
@@ -21,7 +22,12 @@ public class Assignment {
      */
     public static boolean canRentCar(int age) {
         // TODO: Implement this method
-        return false;
+        if (age >= 25) {
+            boolean check = true;
+        } else {
+            boolean check = false;
+        }
+        return check;
     }
 
     /**
