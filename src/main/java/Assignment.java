@@ -9,7 +9,7 @@ public class Assignment {
      * - Large popcorn costs $7.25 (1 popcorn to share)
      */
     public static double calculateMovieNight() {
-        // TODO: Implement this method
+        // TODO: Implement this metho
         return 0.0;
     }
 
