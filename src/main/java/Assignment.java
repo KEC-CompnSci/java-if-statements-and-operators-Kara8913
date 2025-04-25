@@ -1,4 +1,4 @@
-package main.java;
+
 
 public class Assignment {
     /**
@@ -22,12 +22,8 @@ public class Assignment {
      */
     public static boolean canRentCar(int age) {
         // TODO: Implement this method
-        if (age >= 25) {
-            boolean check = true;
-        } else {
-            boolean check = false;
-        }
-        return check;
+        boolean rent = (age >= 25);
+        return rent;
     }
 
     /**
@@ -38,7 +34,9 @@ public class Assignment {
      */
     public static boolean isValidPasswordLength(String password) {
         // TODO: Implement this method
-        return false;
+        int length = password.length();
+        boolean valid = (length >= 8);
+        return valid;
     }
 
     /**
@@ -50,7 +48,9 @@ public class Assignment {
      */
     public static boolean needsOilChange(int mileage, int lastChangeMileage) {
         // TODO: Implement this method
-        return false;
+        int difference = mileage - lastChangeMileage;
+        boolean needschange = (difference >= 5000);
+        return needschange;
     }
 
     /**
@@ -60,7 +60,13 @@ public class Assignment {
      */
     public static String getDivisibleByThreeMessage(int number) {
         // TODO: Implement this method
-        return "";
+        String result = "";
+        if (number%3 == 0) {
+            result = "Divisible by 3";
+        } else {
+            result = "";
+        }
+        return result;
     }
 
     /**
@@ -72,7 +78,16 @@ public class Assignment {
      */
     public static String getLeapYearMessage(int year) {
         // TODO: Implement this method
-        return "";
+        String result = "";
+        if (year%100 == 0 && year%400 !=0) {
+            result = "Not Leap Year";
+        } else if (year%2 != 0) {
+            result = "Not Leap Year";
+        } else {
+            result = "Leap Year";
+        }
+        return result;
+        
     }
 
     /**
@@ -83,6 +98,16 @@ public class Assignment {
      */
     public static String getTicketPriceCategory(int age) {
         // TODO: Implement this method
-        return "";
+        String category = "";
+        if (age<5) {
+            category = "Free";
+        } else if (age<=12) {
+            category = "Child Price";
+        } else if (age<=21) {
+            category = "Student Price";
+        } else {
+            category = "Adult Price";
+        }
+        return category;
     }
 }
